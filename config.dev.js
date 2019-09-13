@@ -9,11 +9,11 @@ module.exports = merge(baseConfig, {
   devtool: "eval-source-map",
   plugins: [
     new HtmlWebpackPlugin({
-      filename: path.join(__dirname, "../public/index.html")
+      filename: path.join(__dirname, "./public/index.html")
     })
   ],
   devServer: {
-    contentBase: path.join(__dirname, "../public"),
+    contentBase: path.join(__dirname, "./public"),
     hot: true,
     inline: true,
     port: 3000,

@@ -5,6 +5,10 @@
   "repository": "https://github.com/IntouchOpec/rtn-appointment-front.git",
   "author": "Intouch Teeramartwanit <intouch.opec@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --config=./config.dev.js --hot --inline",
+    "build": "cross-env NODE_ENV=production webpack --config=./config.prod.js"
+  },
   "dependencies": {
     "classnames": "^2.2.6",
     "moment": "^2.24.0",
