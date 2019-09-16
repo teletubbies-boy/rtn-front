@@ -46,7 +46,7 @@ module.exports = {
     ]
   },
   resolve: {
-    modules: ["node_modules", path.resolve(__dirname, "../src")]
+    modules: ["node_modules", path.resolve(__dirname, "./src")]
   },
   plugins: [
     new webpack.DefinePlugin({
