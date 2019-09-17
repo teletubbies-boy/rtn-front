@@ -9,14 +9,13 @@ const hist = createBrowserHistory();
 class App extends Component {
     render() {
         return (
-            <Router history={hist}>
-                {loading.length > 0 && <Preloader />}
-                <Switch>
-                    <Layout component={Layout} />
-                    <Route component={Error404View} />
-                </Switch>
-            </Router>
-
+                <Router history={hist}>
+                    {loading.length > 0 && <Preloader />}
+                    <Switch>
+                        <Layout component={Layout} />
+                        <Route component={Error404View} />
+                    </Switch>
+                </Router>
         )
     }
 };
